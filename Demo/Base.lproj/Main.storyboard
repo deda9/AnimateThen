@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimateThen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imU-Cj-wS3">
+                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="UDR-Lt-DBg"/>
+                                    <constraint firstAttribute="height" constant="100" id="UDS-Ff-Pcf"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDi-au-TBP">
+                                <rect key="frame" x="130" y="617" width="115" height="30"/>
+                                <state key="normal" title="Async Animation"/>
+                                <connections>
+                                    <action selector="AsyncAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NNE-4q-5dL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQA-XZ-GWZ">
+                                <rect key="frame" x="130" y="567" width="107" height="30"/>
+                                <state key="normal" title="Sync Animation"/>
+                                <connections>
+                                    <action selector="syncAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0yD-BZ-lIk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oDi-au-TBP" secondAttribute="bottom" constant="20" id="g3V-30-TH3"/>
+                            <constraint firstItem="imU-Cj-wS3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ka6-Mp-7YX"/>
+                            <constraint firstItem="imU-Cj-wS3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qlR-Kc-RA4"/>
+                            <constraint firstItem="LQA-XZ-GWZ" firstAttribute="leading" secondItem="oDi-au-TBP" secondAttribute="leading" id="rAU-ZU-ey1"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LQA-XZ-GWZ" secondAttribute="trailing" constant="20" symbolic="YES" id="rDq-iM-Ljc"/>
+                            <constraint firstItem="oDi-au-TBP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wWp-lN-7vI"/>
+                            <constraint firstItem="oDi-au-TBP" firstAttribute="top" secondItem="LQA-XZ-GWZ" secondAttribute="bottom" constant="20" id="yaq-6Y-Vg7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="squareView" destination="imU-Cj-wS3" id="9Xk-ci-yxk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
