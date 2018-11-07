@@ -52,6 +52,7 @@ UIView.animate(withDuration: 2.0, animations: {
 	self.squareView.transform = CGAffineTransform.identity
 	self.squareView.alpha = 0.5
 })
+....
 
 ````
 
